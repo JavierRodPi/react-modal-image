@@ -1,16 +1,17 @@
 version: 2
+defaults: &defaults
+  docker:
+    - image: cypress/browsers:node14.15.0-chrome96-ff94
+      environment:
+        ## this enables colors in the output
+        TERM: xterm
+
 
 jobs:
   build:
     branches:
       ignore:
         - gh-pages
-    docker:
-      # the Docker image with Cypress dependencies
-      - image: cypress/browsers:node14.15.0-chrome96-ff94
-        environment:
-          ## this enables colors in the output
-          TERM: xterm
     working_directory: ~/app
     parallelism: 1
     steps:

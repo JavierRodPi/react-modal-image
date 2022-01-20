@@ -1,5 +1,5 @@
 # react-modal-image
-
+# FORK from https://aautio.github.io/react-modal-image/ to enable React 17
 [![CircleCI][build-badge]][build]
 [![npm package][npm-badge]][npm]
 
